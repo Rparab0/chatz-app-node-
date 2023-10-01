@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatZapp</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="http://localhost:5000/socket.io/socket.io.js"></script>
+    <script defer src="/js/client.js"></script>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="container-left">
+        <nav class="nav-logo">
+          <img src="/assets/chat.png" alt="" class="logo" />
+          <p class="title"><h4>ChatzApp Chatroom</h4></p>
+        </nav>
+      <div class="active-user-bar">
+        <p>Active Users</p>
+      </div>
+      <div id="otherUsers"></div>
+      </div>
+      <div class="container-right">
+       <div class="contactbar">
+       <div class="contacthead">
+        <!-- The individualUserName -->
+        </div>      
+        </div>
+        <div class="Chats">
+          <!-- messages will come here -->
+       </div>
+       <div class="send">
+        <form action="#" id="send-container">
+          <input type="text" name="messanging" placeholder="    Type your message here" id="messanginp">
+          <button class="btn-submit" type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+  </body>
+   </html>
